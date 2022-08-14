@@ -8,12 +8,72 @@
 import SwiftUI
 
 struct ContentView: View {
+    private var viewModel = ViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack(spacing: 0) {
+                Divider().overlay(Color("primary")).frame(height: 1).opacity(0.4)
+                ScrollView {
+                    VStack {
+                        storyList
+                        
+                        Divider().overlay(Color("primary")).frame(height: 1).opacity(0.4)
+                        
+                        ForEach(viewModel.timelineList) { timeline in
+                            TimelineView(timeline: timeline)
+                        }
+                    }
+                    .toolbar {
+                        self.toolbarView()
+                    }
+                }.navigationBarTitleDisplayMode(.inline)
+            }
+        }
+    }
+    
+    var storyList : some View{
+        ScrollView(.horizontal, showsIndicators: false){
+            HStack{
+                ForEach(viewModel.storyList) { story in
+                    StoryView(story: story)
+                }
+            }
+            .padding(.leading, 20)
+            .padding(.vertical, 8)
+        }
+        .padding(.top, 5)
+    }
+    
+    @ToolbarContentBuilder
+    func toolbarView() -> some ToolbarContent{
+        ToolbarItem(placement: .navigationBarLeading) {
+            Button(action: {}) {
+                Image("camera-Icon")
+                    .renderingMode(.template)
+                    .foregroundColor(Color("primary"))
+            }
+        }
+        
+        ToolbarItem(placement: .principal) {
+            Image("instagram-logo")
+                .renderingMode(.template)
+                .foregroundColor(Color("primary"))
+        }
+        
+        ToolbarItem(placement: .navigationBarTrailing) {
+            HStack{
+                Button(action: {}) {
+                    Image("igtv")
+                        .renderingMode(.template)
+                        .foregroundColor(Color("primary"))
+                }
+                Button(action: {}) {
+                    Image("messanger")
+                        .renderingMode(.template)
+                        .foregroundColor(Color("primary"))
+                }
+            }
         }
     }
 }

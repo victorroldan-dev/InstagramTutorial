@@ -11,6 +11,10 @@
 		8EC6DCF628A8B1A500CD225E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC6DCF528A8B1A500CD225E /* ContentView.swift */; };
 		8EC6DCF828A8B1A800CD225E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC6DCF728A8B1A800CD225E /* Assets.xcassets */; };
 		8EC6DCFB28A8B1A800CD225E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC6DCFA28A8B1A800CD225E /* Preview Assets.xcassets */; };
+		8EC6DD0328A8B69500CD225E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC6DD0228A8B69500CD225E /* UserModel.swift */; };
+		8EC6DD0628A8B8A300CD225E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC6DD0528A8B8A300CD225E /* ViewModel.swift */; };
+		8EC6DD0928A8BE2A00CD225E /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC6DD0828A8BE2A00CD225E /* StoryView.swift */; };
+		8ECF3E4128A8CB4F001113C2 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECF3E4028A8CB4F001113C2 /* TimelineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		8EC6DCF528A8B1A500CD225E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8EC6DCF728A8B1A800CD225E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EC6DCFA28A8B1A800CD225E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8EC6DD0228A8B69500CD225E /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		8EC6DD0528A8B8A300CD225E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		8EC6DD0828A8BE2A00CD225E /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		8ECF3E4028A8CB4F001113C2 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,9 @@
 		8EC6DCF228A8B1A500CD225E /* InstagramTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				8EC6DD0728A8BE1400CD225E /* Views */,
+				8EC6DD0428A8B89100CD225E /* ViewModel */,
+				8EC6DD0128A8B67100CD225E /* Model */,
 				8EC6DCF328A8B1A500CD225E /* InstagramTutorialApp.swift */,
 				8EC6DCF528A8B1A500CD225E /* ContentView.swift */,
 				8EC6DCF728A8B1A800CD225E /* Assets.xcassets */,
@@ -65,6 +76,31 @@
 				8EC6DCFA28A8B1A800CD225E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8EC6DD0128A8B67100CD225E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8EC6DD0228A8B69500CD225E /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8EC6DD0428A8B89100CD225E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8EC6DD0528A8B8A300CD225E /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8EC6DD0728A8BE1400CD225E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8EC6DD0828A8BE2A00CD225E /* StoryView.swift */,
+				8ECF3E4028A8CB4F001113C2 /* TimelineView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EC6DD0928A8BE2A00CD225E /* StoryView.swift in Sources */,
+				8ECF3E4128A8CB4F001113C2 /* TimelineView.swift in Sources */,
 				8EC6DCF628A8B1A500CD225E /* ContentView.swift in Sources */,
+				8EC6DD0328A8B69500CD225E /* UserModel.swift in Sources */,
+				8EC6DD0628A8B8A300CD225E /* ViewModel.swift in Sources */,
 				8EC6DCF428A8B1A500CD225E /* InstagramTutorialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
