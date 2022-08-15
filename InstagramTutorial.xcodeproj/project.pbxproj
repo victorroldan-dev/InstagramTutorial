@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E444ABE28AA044F00F441DE /* TabViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E444ABD28AA044F00F441DE /* TabViewCustom.swift */; };
 		8EC6DCF428A8B1A500CD225E /* InstagramTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC6DCF328A8B1A500CD225E /* InstagramTutorialApp.swift */; };
 		8EC6DCF628A8B1A500CD225E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC6DCF528A8B1A500CD225E /* ContentView.swift */; };
 		8EC6DCF828A8B1A800CD225E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC6DCF728A8B1A800CD225E /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E444ABD28AA044F00F441DE /* TabViewCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewCustom.swift; sourceTree = "<group>"; };
 		8EC6DCF028A8B1A500CD225E /* InstagramTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC6DCF328A8B1A500CD225E /* InstagramTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramTutorialApp.swift; sourceTree = "<group>"; };
 		8EC6DCF528A8B1A500CD225E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				8EC6DD0828A8BE2A00CD225E /* StoryView.swift */,
 				8ECF3E4028A8CB4F001113C2 /* TimelineView.swift */,
+				8E444ABD28AA044F00F441DE /* TabViewCustom.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EC6DD0928A8BE2A00CD225E /* StoryView.swift in Sources */,
+				8E444ABE28AA044F00F441DE /* TabViewCustom.swift in Sources */,
 				8ECF3E4128A8CB4F001113C2 /* TimelineView.swift in Sources */,
 				8EC6DCF628A8B1A500CD225E /* ContentView.swift in Sources */,
 				8EC6DD0328A8B69500CD225E /* UserModel.swift in Sources */,

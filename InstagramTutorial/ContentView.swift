@@ -10,6 +10,16 @@ import SwiftUI
 struct ContentView: View {
     private var viewModel = ViewModel()
     
+    init(){
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UIColor(named: "tabBar-bg")
+        
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().compactAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+    }
+    
     var body: some View {
         NavigationStack {
             VStack(spacing: 0) {
@@ -23,6 +33,8 @@ struct ContentView: View {
                         ForEach(viewModel.timelineList) { timeline in
                             TimelineView(timeline: timeline)
                         }
+                        Color.clear.padding(.bottom, 20)
+                        
                     }
                     .toolbar {
                         self.toolbarView()
@@ -39,7 +51,7 @@ struct ContentView: View {
                     StoryView(story: story)
                 }
             }
-            .padding(.leading, 20)
+            .padding(.leading, 10)
             .padding(.vertical, 8)
         }
         .padding(.top, 5)
